@@ -9,38 +9,52 @@
         content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
         href="./assets/style/style.css">
-    <title>Document</title>
+    <title>Drumeasy</title>
 </head>
 
 <body>
     <header class="outter-grid-container">
         <div>
-            <h1>8 Piece Drum set</h1>
+            <h1>Drumeasy</h1>
         </div>
     </header>
     <main>
-        <div class="grid-container-outter">
-
-            <div class="grid-container">
-                <img class="drums-image" src="./assets/image/redDrum.png"
-                    alt="red 8 piece drum set" />
-                <button class="crash-btn"
-                    id="crash-btn-1">Crash</button>
-                <button class="-btn"
-                    id="ride-btn-2">Ride</button>
-                <button class="-btn"
-                    id="middle-btn-3">Medium Tom</button>
-                <button class="-btn"
-                    id="high-btn-4">High Tom</button>
-                <button class="-btn"
-                    id="floor-btn-5">Floor Tom</button>
-                <button class="-btn"
-                    id="hat-btn-6">Hi-Hat</button>
-                <button class="-btn"
-                    id="snare-btn-7">Snare Drum</button>
-                <button class="-btn"
-                    id="bass-btn-8">Bass Drum</button>
+        <div class="container">
+            <img class="drum-set__img"
+                src="./assets/image/redDrum.png"
+                alt="red 8 piece drum set" />
+            <div class="drum-set__btn-layout">
+                <div class="btn-layout__section-1">
+                    <button class="drum-piece-btn"
+                        id="crash-btn-1">Q "Crash"</button>
+                    <button class="drum-piece-btn"
+                        id="ride-btn-2">P "Ride"</button>
+                </div>
+                <div class="btn-layout__section-2">
+                    <button class="drum-piece-btn"
+                        id="middle-btn-3">F "Medium Tom"</button>
+                    <button class="drum-piece-btn"
+                        id="high-btn-4">J "High Tom"</button>
+                </div>
+                <div class="btn-layout__section-3">
+                    <button class="drum-piece-btn"
+                        id="floor-btn-5">C "Floor Tom"</button>
+                    <button class="drum-piece-btn"
+                        id="hat-btn-6">N"Snare Drum"</button>
+                    <button class="drum-piece-btn"
+                        id="snare-btn-7">F "Hi-Hat"</button>
+                </div>
+                <div class="btn-layout__section-4">
+                    <button class="drum-piece-btn"
+                        id="bass-btn-8">Space "Bass Drum"</button>
+                </div>
             </div>
+        </div>
+        <div class="btn-layout__section-5">
+            <button class="extensions-button"
+                id="show-and-hide">Show Drums</button>
+            <button class="extensions-button"
+                id="backing-track">Backing Track</button>
         </div>
     </main>
     <footer>

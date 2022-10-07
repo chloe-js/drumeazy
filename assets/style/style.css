@@ -4,7 +4,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(251, 123, 123);
+    background-color: #ed634e;
     font-family: 'Lobster';
 }
 
@@ -12,64 +12,99 @@ h1 {
     text-align: center;
     margin: 4rem;
     color: white;
-    font-size: 3rem;
+    font-size: 8vh;
     letter-spacing: 0.25rem;
+    text-shadow: 4px 4px 5px black;
 }
 
-img {
-    display: block;
+.container {
+    position: relative;
+    margin: 2rem;
+}
+
+.drum-set__img {
     width: 100%;
+    object-fit: cover;
 }
 
-/* button {
-
-} */
-
-.grid-container {
-    display: grid;
-    grid-template-areas:
-        "drums-img drums-img drums-img drums-img"
-        "button-top button-top button-top button-top"
-        "button-middle button-middle button-middle button-middle"
-        "button-floor button-floor button-floor button-floor"
-        "button-bass button-bass button-bass button-bass"
-    /* grid-template-columns: repeat(6,1fr);
-    grid-template-rows: repeat(4,1fr);
-    width: 80%;
-    margin: 0 auto;
-    border: 5px solid ; */
-
-    /* position: relative; */
-    /* grid-template-columns: 200px 250px;
-    grid-auto-rows: minmax(150px,auto);
-    justify-items: stretch;
-    align-items: stretch; */
-    /* border-width: 0.5rem;
-    border: solid;
-    margin: 1rem; */
-    /* position: relative; */
-}
-
-.drums-image, .crash-btn {
-    grid-row: span 4;
-    grid-column: span 4;
-    /* grid-row: 1/1; */
-}
-/*
-.drums-image {
-    grid-column: 1/9;
-}
-
-.crash-btn {
-    grid-column: 2/ -1; */
-    /* grid-row: 1/2; */
-    /* grid-row-start: 2; */
-    /* grid-row-end: 4; */
-    /* position: absolute;
+.drum-set__btn-layout {
+    position: absolute;
     top: 0;
-    left: 3%; */
-/* } */
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
 
+.btn-layout__section-1,
+.btn-layout__section-2,
+.btn-layout__section-3,
+.btn-layout__section-4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 45%;
+}
+
+.btn-layout__section-1 {
+    height: 15%;
+}
+.btn-layout__section-2 {
+    height: 20%;
+}
+.btn-layout__section-3 {
+    height: 20%;
+}
+
+.btn-layout__section-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.extensions-button {
+    background-color: rgba(9, 200, 248, 0.7);
+    height: 100%;
+    color: white;
+    border-radius: 8px;
+    font-size: 2vh;
+    font-family: 'Lobster';
+    margin: 0 2rem;
+    border: none;
+    box-shadow: 2px 2px 3px black;
+    padding: 0.5rem 2rem;
+}
+
+.drum-piece-btn {
+    flex: 1;
+    height: 100%;
+    background: none;
+    border: none;
+    color: transparent;
+    font-size: 2vh;
+    font-family: 'Lobster'; 
+}
+
+.drum-piece-btn:hover {
+    background-color: rgba(9, 200, 248, 0.7);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.show-keys-option-active {
+    background-color: rgba(9, 200, 248, 0.7);
+    color: white;
+    border-radius: 8px;
+    box-shadow: 2px 2px 3px #666;
+}
+
+.btn-layout__section-3 > .drum-piece-btn:nth-child(2) {
+    max-width: 25%;
+}
+
+.btn-layout__section-3 > .drum-piece-btn:last-child {
+    max-width: 20%;
+}
 
 
 
@@ -91,4 +126,13 @@ img {
     /* .card button {
         padding: 10px;
     } */
+    .extensions-button {
+        margin-top: 1rem;
+
+        flex: 1;
+    }
+    .btn-layout__section-5 {
+        flex-direction: column;
+        align-items: stretch;
+    }
 }
