@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(251, 123, 123);
+    font-family: 'Lobster';
+}
+
+h1 {
+    text-align: center;
+    margin: 4rem;
+    color: white;
+    font-size: 3rem;
+    letter-spacing: 0.25rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* button {
+
+} */
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "drums-img drums-img drums-img drums-img"
+        "button-top button-top button-top button-top"
+        "button-middle button-middle button-middle button-middle"
+        "button-floor button-floor button-floor button-floor"
+        "button-bass button-bass button-bass button-bass"
+    /* grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(4,1fr);
+    width: 80%;
+    margin: 0 auto;
+    border: 5px solid ; */
+
+    /* position: relative; */
+    /* grid-template-columns: 200px 250px;
+    grid-auto-rows: minmax(150px,auto);
+    justify-items: stretch;
+    align-items: stretch; */
+    /* border-width: 0.5rem;
+    border: solid;
+    margin: 1rem; */
+    /* position: relative; */
+}
+
+.drums-image, .crash-btn {
+    grid-row: span 4;
+    grid-column: span 4;
+    /* grid-row: 1/1; */
+}
+/*
+.drums-image {
+    grid-column: 1/9;
+}
+
+.crash-btn {
+    grid-column: 2/ -1; */
+    /* grid-row: 1/2; */
+    /* grid-row-start: 2; */
+    /* grid-row-end: 4; */
+    /* position: absolute;
+    top: 0;
+    left: 3%; */
+/* } */
+
+
+
+
+/* desktop */
+@media (min-width: 1025px) {
+    /* .card img {
+        width: 200px;
+    } */
+}
+/* tablet */
+@media (min-width: 481px) and (max-width: 1024px) {
+    /* .card img {
+        width:175px;
+    } */
+}
+
+/* mobile */
+@media (max-width: 480px) {
+    /* .card button {
+        padding: 10px;
+    } */
+}
