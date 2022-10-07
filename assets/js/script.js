@@ -72,3 +72,5 @@ const listenerFunctionMedium = () => {
 };
 
 buttonThree.addEventListener("click", listenerFunctionMedium);
+
+console.log(new Number())
